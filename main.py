@@ -73,10 +73,12 @@ def run():
 
     print(f'ending point at b = {b}, m = {m}, error = {compute_error(b, m, points)}')
 
+    # data for plotting points
     x_ar = points[:, 0]
     y_ar = points[:, 1]
-
     plt.plot(x_ar, y_ar, 'o')
+
+    # plot the best fitted line
     plt.plot(x_ar, m*x_ar + b)
     plt.show()
 
